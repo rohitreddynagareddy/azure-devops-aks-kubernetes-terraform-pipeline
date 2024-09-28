@@ -1,4 +1,5 @@
 resource "azurerm_kubernetes_cluster" "aks_cluster" {
+ api_version = "2023-01-01"  # Specify a supported API version here
   dns_prefix          = "${azurerm_resource_group.aks_rg.name}"
   location            = azurerm_resource_group.aks_rg.location
   name                = "${azurerm_resource_group.aks_rg.name}-cluster"
