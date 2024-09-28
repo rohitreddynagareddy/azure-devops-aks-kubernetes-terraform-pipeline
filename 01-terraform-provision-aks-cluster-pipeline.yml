@@ -63,7 +63,7 @@ stages:
             steps:
               - task: DownloadSecureFile@1
                 inputs:
-                  secureFile: 'aks-terraform-devops-ssh-key-ubub'
+                  secureFile: 'aks-terraform-devops-ssh-key-ububtu.pub'
                 displayName: :Download SSH Key
     
               - task: TerraformCLI@2
